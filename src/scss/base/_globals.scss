@@ -18,8 +18,10 @@ body {
     background-size: contain, contain;
   }
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 4rem;
 }
 
 .main {

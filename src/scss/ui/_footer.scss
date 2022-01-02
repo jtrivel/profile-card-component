@@ -1,0 +1,17 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.footer {
+  font-size: 1.2rem;
+  text-align: center;
+  color: v.$desaturatedBlue;
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    margin-left:.5rem ;
+    color: v.$desaturatedBlue;
+    font-weight: 700;
+  }
+
+}

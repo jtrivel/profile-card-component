@@ -1,0 +1,29 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: v.$primaryFont;
+  background-color: v.$darkCyan;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 40vw bottom 50vh , left 40vw top 50vh;
+  @include m.tablet { 
+    background-position: right 50vw bottom 50vh , left 50vw top 50vh;
+    background-size: contain, contain;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  max-width: 38rem;
+  width: 95%;
+  margin-inline: auto;
+}

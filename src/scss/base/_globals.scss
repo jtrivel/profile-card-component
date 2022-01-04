@@ -14,8 +14,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: right 40vw bottom 50vh , left 40vw top 50vh;
   @include m.tablet { 
-    background-position: right 50vw bottom 50vh , left 50vw top 50vh;
-    background-size: contain, contain;
+    background-position: right 50vw bottom 50vh , left 50vw top 50vh ;
   }
   display: flex;
   flex-direction: column;
